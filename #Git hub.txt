@@ -1,2 +1,0 @@
-#Git hub
-#Identity added: /home/ergo/.ssh/id_rsa (monteiro.sudario@gmail.com)
