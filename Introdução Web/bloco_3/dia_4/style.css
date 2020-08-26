@@ -3,6 +3,10 @@
     display: inline;
   
 }
+p {
+    display: inline-block;
+    text-align: justify;
+}
 .table {
     text-align: center;
     display: inline-block;
