@@ -1,0 +1,14 @@
+.section {
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+    
+}
+.table {
+    text-align: center;
+    display: inline-block;
+}
+nav li {
+    display: inline;
+    background-color: yellow;
+}
