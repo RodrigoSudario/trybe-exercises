@@ -10,5 +10,22 @@
 }
 nav li {
     display: inline;
-    background-color: yellow;
+    background-color: rgb(132, 169, 140);
+    
+}
+header {
+    background-color: rgb(47, 62, 70);
+    padding: 5px;
+}
+header h1 {
+    text-align: center;
+    color: rgb(132, 169, 140);
+}
+footer {
+    background-color: rgb(47, 62, 70);
+}
+.rodape {
+    display: inline-block;
+    color: rgb(132, 169, 140);
+    
 }
