@@ -1,6 +1,11 @@
 // Somando as variáveis
 let a = 5;
 let b = 3;
-let c;
-c = a + b;
-console.log(c);
+
+//console.log(a+b);
+
+//Agora usando função
+
+function sum(a, b) {
+    return a + b;
+  }
