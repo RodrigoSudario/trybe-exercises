@@ -52,27 +52,44 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
         // exercício 1:
-        let paragrafo =  document.getElementsByTagName("p")[1];
-        paragrafo.innerText = "Daqui a dois anos espero ter adquirido bastante experiência na área de desenvolvimento e próximo das pessoas que amo.";
+        function inserindoTexto (){
+          let paragrafo =  document.getElementsByTagName("p")[1];
+          paragrafo.innerText = "Daqui a dois anos espero ter adquirido bastante experiência na área de desenvolvimento e próximo das pessoas que amo.";
+        }
+        console.log(inserindoTexto());
         
         // exercício 2:
-        document.getElementsByClassName('main-content')[0].style.backgroundColor="rgb(76,164,109)";
-        
+        function mudandoCor (){
+          document.getElementsByClassName('main-content')[0].style.backgroundColor="rgb(76,164,109)";
+        }        
+        console.log(mudandoCor());
         // exercício 3:
-        document.getElementsByClassName('center-content')[0].style.backgroundColor="white";
-        
+        function mudandoCorWhite () {
+          document.getElementsByClassName('center-content')[0].style.backgroundColor="white";
+        }
+        console.log(mudandoCorWhite);
+
         // exercício 4:
+        function corrigindoTexto () {
         document.getElementsByTagName('h1')[0].innerText ="Exercício 5.1 - JavaScript ";
+        }
+        console.log(corrigindoTexto());
         
         // exercício 5:
+        function UpperCase () {
         let textoToUpperCase = document.getElementsByTagName("p")[0];
         textoToUpperCase.innerText = textoToUpperCase.innerText.toUpperCase();
-        
-        // exercício 6:
-        let exibe = documents.getElementsByTagName("p");
-        for(let i = 0; i < exibe.length; i += 1){
-          console.log(exibe[i].innerHTML);
         }
+        console.log(UpperCase());
+                
+        // exercício 6:
+        function exibindoParagrafo () {
+          let exibe = documents.getElementsByTagName("p");
+          for(let i = 0; i < exibe.length; i += 1){
+            console.log(exibe[i].innerHTML);
+          }
+        }
+        console.log(exibindoParagrafo());
     
     </script>
   </body>
