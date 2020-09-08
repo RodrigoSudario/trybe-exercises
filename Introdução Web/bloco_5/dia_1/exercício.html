@@ -52,25 +52,28 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
         // exercício 1:
-        document.getElementsByTagName("p")[1].innerText = "Daqui a dois anos espero ter adquirido bastante experiência na área de desenvolvimento e próximo das pessoas que amo.";
+        let paragrafo =  document.getElementsByTagName("p")[1];
+        paragrafo.innerText = "Daqui a dois anos espero ter adquirido bastante experiência na área de desenvolvimento e próximo das pessoas que amo.";
+        
         // exercício 2:
         document.getElementsByClassName('main-content')[0].style.backgroundColor="rgb(76,164,109)";
+        
         // exercício 3:
         document.getElementsByClassName('center-content')[0].style.backgroundColor="white";
+        
         // exercício 4:
         document.getElementsByTagName('h1')[0].innerText ="Exercício 5.1 - JavaScript ";
-        // exercício 5:
-        for(let i = 0; i < document.getElementsByTagName('p').length; i+= 1){
-            let j = document.getElementsByTagName('p')[i].innexText.toUpperCase;
-        }
-        for(let i2 = 0; i2 < j.length; i2 +=1){
-            document.getElementsByTagName('p')[i2].innerText = j[i2];
-        }
-        // exercício 6:
-
         
-
-
+        // exercício 5:
+        let textoToUpperCase = document.getElementsByTagName("p")[0];
+        textoToUpperCase.innerText = textoToUpperCase.innerText.toUpperCase();
+        
+        // exercício 6:
+        let exibe = documents.getElementsByTagName("p");
+        for(let i = 0; i < exibe.length; i += 1){
+          console.log(exibe[i].innerHTML);
+        }
+    
     </script>
   </body>
 </html>
