@@ -95,7 +95,32 @@
         document.querySelector('img').src = `https://picsum.photos/200`;
         
         //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+        let list = document.createElement('ul');
+        
+        for(let index = 0; index <= 9; index += 1){
+          let elementLi = document.createElement('li');
+          list.appendChild(elementLi);
+        }
+        document.querySelectorAll('div')[3].appendChild(list);
+        document.querySelectorAll('li')[0].innerText = "um";
+        document.querySelectorAll('li')[1].innerText = "dois";
+        document.querySelectorAll('li')[2].innerText = "três";
+        document.querySelectorAll('li')[3].innerText = "quatro";
+        document.querySelectorAll('li')[4].innerText = "cinco";
+        document.querySelectorAll('li')[5].innerText = "sex";
+        document.querySelectorAll('li')[6].innerText = "sete";
+        document.querySelectorAll('li')[7].innerText = "oito";
+        document.querySelectorAll('li')[8].innerText = "nove";
+        document.querySelectorAll('li')[9].innerText = "dez";
+        
         //Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
+             
+        for(let index2 = 0; index2 <=2; index2 +=1){
+          let tagH3 = document.createElement('h3');
+          document.querySelector('div').appendChild(tagH3);
+
+        }
+
 
 
         //Adicione a classe title na tag h1 criada;
