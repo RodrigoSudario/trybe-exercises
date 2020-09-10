@@ -60,7 +60,6 @@
         tarefa2.addEventListener("click", function(){
           alert ("Desconto de R$" + calc.toFixed(2) + "!");
         })
-        
       </script>
       <hr />
       <h2>Bônus</h2>
@@ -78,6 +77,19 @@
         console qual dos eventos acabou de ocorrer.
       </p>
       <!-- Adicione a tag <img /> aqui -->
+      <img class="bonus" src="https://cdn.pixabay.com/photo/2017/09/27/12/55/tiger-2791980_960_720.jpg" alt="Tigre tomando banho no lago" width="200px"/>
+      <script>
+        //Tarefa bônus:
+        let bonus = document.querySelector(".bonus");
+        bonus.addEventListener("mouseover", function(){
+          let img = document.querySelector(".bonus");
+          img.src = "https://cdn.pixabay.com/photo/2014/10/22/18/19/tiger-498543_960_720.jpg";
+        })
+        bonus.addEventListener("mouseleave", function(){
+          let img = document.querySelector(".bonus");
+          img.src = "https://cdn.pixabay.com/photo/2017/09/27/12/55/tiger-2791980_960_720.jpg";
+        })
+      </script>
     </div>
   </body>
 </html>
