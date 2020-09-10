@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+    //Colocando o resultado na div solution:
+    let divMae = document.querySelector("#solution");
+    let pFilho = document.createElement("p");
+    divMae.appendChild(pFilho);
+    
+    //Adicionando addEventListener:
+
+    //Número ao quadrado
+    let squareNum = document.querySelector("#square-button");
+    squareNum.addEventListener("click", function(){
+      let numDoInput = document.getElementById("square-input");
+      let numberQuad = (numDoInput.value * numDoInput.value);
+      document.querySelector('p').innerText = `O resultado é  ${numberQuad}`;
+      
+    });
+  
+
+    //Metade de um número
+    
+    let numHalf = document.querySelector("#half-button");
+    numHalf.addEventListener("click", function (){
+      let numDoInput = document.getElementById("half-input");
+      let numberHalf = (numDoInput.value / 2);
+      document.querySelector('p').innerText = `A metade de ${numDoInput.value} é  ${numberHalf}`;
+    });
+
+    
+    //Porcentagem de um número sobre o outro
+   
+    let twoNumbersPercent = document.querySelector("#percent-button");
+    twoNumbersPercent.addEventListener("click", function (){
+      let numDoInput = document.getElementById("percent1-input");
+      let numDoInput2 = document.getElementById("percent2-input");
+      let percent = ((numDoInput.value/numDoInput2.value) * 100);
+      document.querySelector('p').innerText = `${numDoInput.value} é ${percent} % de ${numDoInput2.value}`;
+    });
+
+    //Área do círculo
+    
+    let circle = document.querySelector("#area-button");
+    circle.addEventListener("click", function (){
+      let numDoInput = document.getElementById("area-input");
+      let areaCircle = (3,14*(numDoInput.value * numDoInput.value));
+      let total = areaCircle.toFixed(2);
+      document.querySelector('p').innerText = `A área do círculo é ${total}`;
+    }); 
+
+  </script>
+</body>
+</html>
