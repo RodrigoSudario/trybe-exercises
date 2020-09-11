@@ -24,12 +24,12 @@
     </div>
     
     <script>
-
+        window.onload = function(){
         //Cor de fundo da tela;
         let bodyColor = document.querySelector('body');
         bodyColor.addEventListener("keyup", function(){
             let colorBody = document.getElementById("bodyColorIpunt");
-            document.body.style.backgroundColor = "colorBody";
+            document.querySelector("body").style.backgroundColor = colorBody.value;
             console.log(colorBody.value);
         })
 
@@ -41,9 +41,12 @@
         //Espaçamento entre as linhas do texto;
 
         //Tipo da fonte (Font family).
+        
 
 
 
+
+        }
     </script>
 </body>
 </html>
