@@ -29,16 +29,28 @@
     
     <script>
         window.onload = function(){
+             //Recolhendo informações anteriores:
+            document.querySelector("body").style.backgroundColor = localStorage.body;
+            document.getElementById("paragraph1").style.color = localStorage.paragraphColor;
+            document.getElementById("paragraph2").style.color = localStorage.paragraphColor;
+            document.getElementById("paragraph1").style.fontSize = localStorage.fontSize;
+            document.getElementById("paragraph2").style.fontSize = localStorage.fontSize;
+            document.getElementById("paragraph1").style.lineHeight = localStorage.lineHeight;
+            document.getElementById("paragraph2").style.lineHeight = localStorage.lineHeight;
+            document.getElementById("paragraph1").style.fontFamily = localStorage.fontFamily;
+            document.getElementById("paragraph2").style.fontFamily = localStorage.fontFamily;
+
+            //Declaração das variáveis com Input:
             let colorBody = document.getElementById("bodyColorIpunt");
             let textColor = document.getElementById("textColorIpunt");
             let sizeFont = document.getElementById("sizeFontIpunt");
             let heightLin = document.getElementById("heightLinesInput");
             let styleF = document.getElementById("styleFontInput");
        
-            //Cor de fundo da tela;
+            //Adicionando a função addEventListener:
             let bodyStyle = document.querySelector('body');
             bodyStyle.addEventListener("keyup", function(){
-                
+                //Mudanças com o evento:
                 document.querySelector("body").style.backgroundColor = colorBody.value;
                 document.getElementById("paragraph1").style.color = textColor.value;
                 document.getElementById("paragraph2").style.color = textColor.value;
@@ -49,6 +61,13 @@
                 document.getElementById("paragraph1").style.fontFamily = styleF.value;
                 document.getElementById("paragraph2").style.fontFamily = styleF.value;
 
+                //Mudanças salvas no localStorage:
+                localStorage.setItem("body", colorBody.value);
+                localStorage.setItem("paragraphColor", textColor.value);
+                localStorage.setItem("fontSize", sizeFont.value +"px");
+                localStorage.setItem("lineHeight", heightLin.value);
+                localStorage.setItem("fontFamily", styleF.value);
+                
              });
         } 
     </script>
