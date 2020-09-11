@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Lorem Ipsum</h1>
+    <div class="maeDosParagrafos">
+        <p id="paragraph1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien turpis, aliquet id egestas vel, viverra ut turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor, mauris at eleifend vestibulum, neque ligula porttitor purus, et sagittis tortor dui at enim. Sed id lorem vitae elit finibus commodo. Phasellus elit tortor, dapibus id ex sed, hendrerit convallis risus. Donec non semper quam. Nulla rhoncus nec leo egestas vestibulum. Proin sed arcu commodo justo accumsan sodales. Curabitur eu turpis id ligula varius scelerisque.</p>
+        <p id="paragraph2">Nunc et massa et arcu dapibus volutpat non in ante. Donec sodales dignissim libero, convallis maximus arcu pellentesque quis. Ut sapien est, vehicula in hendrerit a, laoreet vitae purus. Curabitur congue, turpis eu mollis maximus, lectus lorem tristique leo, quis iaculis nibh lacus in sapien. Integer ipsum nibh, molestie at dapibus ut, aliquet a metus. Sed non viverra neque. Phasellus posuere, turpis vitae mollis laoreet, sem mi maximus lacus, sit amet dapibus tortor lacus sit amet arcu. Integer vulputate a lorem ac convallis.</p>
+        <p>Digite a cor de fundo: </p>
+        <input type="text" id="bodyColorIpunt">
+
+        <p>Digite a cor do texto: </p>
+        <input type="text" id="textColorIpunt">
+
+        <p>Digite o tamanho da fonte: </p>
+        <input type="number" id="sizeFontIpunt">
+
+        <p>Digite o espaçamento entre linhas: </p>
+        <input type="number" id="heightLinesInput">
+
+        <p>Digite o estilo da fonte: </p>
+        <input type="text" id="styleFontInput">
+    </div>
+    
+    <script>
+        window.onload = function(){
+             //Recolhendo informações anteriores:
+            document.querySelector("body").style.backgroundColor = localStorage.body;
+            document.getElementById("paragraph1").style.color = localStorage.paragraphColor;
+            document.getElementById("paragraph2").style.color = localStorage.paragraphColor;
+            document.getElementById("paragraph1").style.fontSize = localStorage.fontSize;
+            document.getElementById("paragraph2").style.fontSize = localStorage.fontSize;
+            document.getElementById("paragraph1").style.lineHeight = localStorage.lineHeight;
+            document.getElementById("paragraph2").style.lineHeight = localStorage.lineHeight;
+            document.getElementById("paragraph1").style.fontFamily = localStorage.fontFamily;
+            document.getElementById("paragraph2").style.fontFamily = localStorage.fontFamily;
+
+            //Declaração das variáveis com Input:
+            let colorBody = document.getElementById("bodyColorIpunt");
+            let textColor = document.getElementById("textColorIpunt");
+            let sizeFont = document.getElementById("sizeFontIpunt");
+            let heightLin = document.getElementById("heightLinesInput");
+            let styleF = document.getElementById("styleFontInput");
+       
+            //Adicionando a função addEventListener:
+            let bodyStyle = document.querySelector('body');
+            bodyStyle.addEventListener("keyup", function(){
+                //Mudanças com o evento:
+                document.querySelector("body").style.backgroundColor = colorBody.value;
+                document.getElementById("paragraph1").style.color = textColor.value;
+                document.getElementById("paragraph2").style.color = textColor.value;
+                document.getElementById("paragraph1").style.fontSize = (sizeFont.value +"px");
+                document.getElementById("paragraph2").style.fontSize = (sizeFont.value +"px");
+                document.getElementById("paragraph1").style.lineHeight = heightLin.value;
+                document.getElementById("paragraph2").style.lineHeight = heightLin.value;
+                document.getElementById("paragraph1").style.fontFamily = styleF.value;
+                document.getElementById("paragraph2").style.fontFamily = styleF.value;
+
+                //Mudanças salvas no localStorage:
+                localStorage.setItem("body", colorBody.value);
+                localStorage.setItem("paragraphColor", textColor.value);
+                localStorage.setItem("fontSize", sizeFont.value +"px");
+                localStorage.setItem("lineHeight", heightLin.value);
+                localStorage.setItem("fontFamily", styleF.value);
+                
+             });
+        } 
+    </script>
+</body>
+</html>
