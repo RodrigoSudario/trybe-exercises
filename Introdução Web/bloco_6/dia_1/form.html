@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header><h1>Cadastro de currículo</h1></header>
     <fieldset class="fieldset-container">
+        
         <label for="name">Nome</label>
         <input type="text" name="name" id="name" maxlength="40" required="required">
         
@@ -29,6 +31,24 @@
         <input type="radio" name="ap" id="ap" required="required">
 
     </fieldset>
+    <fieldset class="fieldset-container">
+        <textarea maxlength="1000" placeholder="Máx 1000 caracteres" required="required" id="resum"></textarea><br>
+        <span><em>Resumo do currículo</em></span><br><br>
+
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo">
+
+        <label for="descrição">Descrição do cargo</label>
+        <input type="text" name="descrição" id="descrição" required="required">
+
+        <label for="data">Data de início</label>
+        <input type="text" name="data" id="data" placeholder="dd/mm/aa">
+    </fieldset>
+    <div class="divBtn">
+        <button class="btn" id="fluxo">Interrompa fluxo</button>
+        <button class="btn" id="limpar">Limpar</button>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
