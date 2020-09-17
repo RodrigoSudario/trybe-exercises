@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(237, 246, 249);
+}
+.fieldset-container{
+    background-color: rgb(237, 220, 210);
+    border: 1px solid rgb(221, 190, 169);
+    border-radius: 3px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="text"]{
+    width: 100%;
+    background-color: rgb(255, 241, 230);
+    border: 1px solid rgb(221, 190, 169);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 auto 5px auto;
+    font-size: 14px;
+}
