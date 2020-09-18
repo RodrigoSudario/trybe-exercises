@@ -11,7 +11,7 @@
     <fieldset class="fieldset-container">
         
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name" maxlength="40" required="required">
+        <input type="text" name="name" id="name" maxlength="40" required="required" value="name">
         
         <label for="email">E-mail</label>
         <input type="text" name="email" id="email" maxlength="50" required="required">
@@ -24,6 +24,11 @@
 
         <label for="city">Cidade</label>
         <input type="text" name="city" id="city" maxlength="28" required="required">
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option>Selecione</option>
+        </select><br>
         
         <label for="house">Casa</label>
         <input type="radio" name="house" id="house" required="required">
@@ -48,7 +53,8 @@
         <button class="btn" id="fluxo"><span class="colorText">Interrompa fluxo</span></button>
         <button class="btn" id="limpar"><span class="colorText">Limpar</span></button>
     </div>
-    
+    <div id="fieldset-container">
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -21,4 +21,12 @@ date.addEventListener("keyup", function(){
     
 });
 
+let selectMother = document.getElementById("estado");
+
+let states = ["AC", "AL", "AP", "AM", "BA", "CE", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO", "DF"];
+
+for(let index = 0; index < states.length; index += 1){
+   let options = document.createElement("option");
+   selectMother.appendChild(options).innerHTML = states[index];
+}
 
