@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Cadastro de currículo</h1>
+    </header>
+    <div class="field">
+        <label for="name" class="label">Nome</label>
+        <div class="control">
+            <input class="input" placeholder="Nome completo" type="text" name="name" id="name" maxlength="40"
+                required="required" value="">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="email">E-mail</label>
+        <div class="control">
+            <input class="input" placeholder="Digite o seu e-mail" type="text" name="email" id="email" maxlength="50"
+                required="required">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="cpf">CPF</label>
+        <div class="control">
+            <input class="input" placeholder="Somente números" type="text" name="cpf" id="cpf" maxlength="11"
+                required="required">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="address">Endereço</label>
+        <div class="control">
+            <input placeholder="Rua, Avenida, Alameda,..." class="input" type="text" name="address" id="address"
+                maxlength="200" required="required"> </div>
+    </div>
+    </div>
+    <div class="field">
+        <label class="label" for="city">Cidade</label>
+        <div class="control">
+            <input placeholder="Cidade" class="input" type="text" name="city" id="city" maxlength="28"
+                required="required">
+        </div>
+    </div>
+    <div class="control">
+        <label class="label" for="estado">Estado</label>
+        <div class="select">
+            <select name="estado" id="estado" required="required">
+                <option>Selecione</option>
+            </select>
+        </div>
+    </div><br>
+    <div class="control">
+        <label class="radio" for="house"><input type="radio" name="home" id="house" required="required">Casa</label>
+    </div>
+    <div class="control">
+        <label class="radio" for="ap"><input type="radio" name="home" id="ap" required="required">Apartamento</label>
+    </div><br>
+    <textarea class="textarea" maxlength="1000" placeholder="Máx 1000 caracteres" required="required"
+        id="resum"></textarea>
+    <span><em>Resumo do currículo</em></span><br><br>
+
+    <div class="field">
+        <label class="label" for="cargo">Cargo</label>
+        <div class="control">
+            <input placeholder="Último cargo" class="input" type="text" name="cargo" id="cargo">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="descrição">Descrição do cargo</label>
+        <div class="control">
+            <input class="input" type="text" name="descrição" id="descrição" required="required">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="date">Data de início</label>
+        <div class="control">
+            <input class="input" type="text" name="data" id="date" placeholder="dd/mm/aa" maxlength="8">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button is-dark" id="fluxo"><span>Interromper fluxo</span></button>
+        <button class="button is-dark" id="limpar"><span>Limpar</span></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

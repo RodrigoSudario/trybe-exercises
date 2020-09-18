@@ -1,0 +1,9 @@
+body{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: hsl(0, 0%, 86%);
+}
+h1{
+    text-align: center;
+}
