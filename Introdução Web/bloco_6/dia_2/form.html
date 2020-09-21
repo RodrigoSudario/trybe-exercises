@@ -15,7 +15,7 @@
     <header>
         <h1 class="title">Cadastro de currículo</h1>
     </header>
-    <form action="" method="POST">
+    <form action="" method="POST" class="my-form">
         <div class="field">
             <label for="name" class="label">Nome</label>
             <div class="control">
@@ -65,7 +65,7 @@
         <div class="control">
             <label class="radio" for="ap"><input type="radio" name="home" id="ap" required="required">Apartamento</label>
         </div><br>
-        <textarea class="textarea" maxlength="1000" placeholder="Máx 1000 caracteres" required="required"
+        <textarea class="textarea" maxlength="1000" placeholder="Máx 1000 caracteres" required="required" name="resum"
             id="resum"></textarea>
         <span><em>Resumo do currículo</em></span><br><br>
     
@@ -89,9 +89,9 @@
         </div>
     
         <div class="buttons">
-            <button class="button is-dark" id="fluxo"><span>Interromper fluxo</span></button>
-            <button class="button is-dark" id="limpar"><span>Limpar</span></button>
-            <button class="button is-dark" type="submit" id="submit" value="1">Enviar</button>            
+            <button class="button is-dark" id="fluxo">Interromper fluxo</button>
+            <button class="button is-dark" type="submit" id="submit" value="1">Enviar</button>
+            <button class="button is-dark" type="reset" id="reset">Limpar</button>          
         </div>
     </form>
     
