@@ -19,8 +19,7 @@
         <div class="field">
             <label for="name" class="label">Nome</label>
             <div class="control">
-                <input class="input" placeholder="Nome completo" type="text" data-validate-field="name" name="name" id="name" maxlength="40"
-                    required="required" value="">
+                <input class="input" placeholder="Nome completo" type="text" data-validate-field="name" name="name" id="name">
             </div>
         </div>
         <div class="field">
@@ -40,21 +39,20 @@
         <div class="field">
             <label class="label" for="address">Endereço</label>
             <div class="control">
-                <input placeholder="Rua, Avenida, Alameda,..." class="input" type="text" data-validate-field="address" name="address" id="address"
+                <input placeholder="Rua, Avenida, Alameda,..." class="input" type="text" data-validate-field="add" name="address" id="address"
                     maxlength="200" required="required"> </div>
         </div>
         </div>
         <div class="field">
             <label class="label" for="city">Cidade</label>
             <div class="control">
-                <input placeholder="Cidade" class="input" type="text" data-validate-field="city" name="city" id="city" maxlength="28"
-                    required="required">
+                <input placeholder="Cidade" class="input" type="text" data-validate-field="cit" name="city" id="city" maxlength="28" required="required">
             </div>
         </div>
         <div class="control">
             <label class="label" for="estado">Estado</label>
             <div class="select">
-                <select name="estado" id="estado" required="required">
+                <select name="estado" id="estado" required="required" data-validate-field="sta">
                     <option>Selecione</option>
                 </select>
             </div>
@@ -72,7 +70,7 @@
         <div class="field">
             <label class="label" for="cargo">Cargo</label>
             <div class="control">
-                <input placeholder="Último cargo" class="input" type="text" data-validate-field="cargo" name="cargo" id="cargo">
+                <input placeholder="Último cargo" class="input" type="text" data-validate-field="text" name="cargo" id="cargo">
             </div>
         </div>
         <div class="field">
@@ -89,12 +87,28 @@
         </div>
     
         <div class="buttons">
-            <button class="button is-dark" id="fluxo">Interromper fluxo</button>
             <button class="button is-dark" type="submit" id="submit" value="1">Enviar</button>
             <button class="button is-dark" type="reset" id="reset">Limpar</button>          
         </div>
-    </form>
-    
+    </form><br><br>
+
+    <div class="content">
+        <span class="tag is-black">Informações pessoais</span>
+        <ol class="is-upper-roman">
+            <!-- <li id="listName"></li>
+            <li id="listEmail"></li>
+            <li id="listCPF"></li>
+            <li id="listAddress"></li>
+            <li id="listCity"></li>
+            <li id="listState"></li>
+            <li id="listHome"></li>
+            <li id="listResum"></li>
+            <li id="listCargo"></li>
+            <li id="listDescrição"></li>
+            <li id="listDate"></li> -->
+        </ol>
+
+    </div>
 
     <script src="script.js"></script>
     <script src="pikaday.js"></script>
