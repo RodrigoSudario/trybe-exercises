@@ -1,6 +1,6 @@
 let date = document.getElementById("date");
 
-date.addEventListener("keyup", function(){
+/* date.addEventListener("keyup", function(){
     let dateNumb = date.value.split("/", 3);
     console.log(dateNumb)
      if(dateNumb[0] > 31){
@@ -19,7 +19,7 @@ date.addEventListener("keyup", function(){
         alert("Erro de contextualização");
      }
     
-});
+}); */
 
 let selectMother = document.getElementById("estado");
 
