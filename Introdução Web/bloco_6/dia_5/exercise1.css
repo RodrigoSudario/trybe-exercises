@@ -1,0 +1,44 @@
+body {
+    margin: 10px
+}
+h1 {
+    font-size: 1.2rem;
+}
+h2 {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 30px;
+}
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: cyan;
+        margin: 5px;
+    }
+    p{
+        font-size: xx-large;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    body {
+        background-color: yellow;
+        margin: 0px;
+        max-width: 1300px;
+    }
+    p{
+        font-size: xx-large;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
