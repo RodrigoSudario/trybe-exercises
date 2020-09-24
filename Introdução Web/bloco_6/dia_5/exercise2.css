@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  margin: 10px;
+  background-color: black;
+  color: white;
+}
+h1, h2{
+  font-size: medium;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav ul li{
+  margin-left: 15px;
+}
