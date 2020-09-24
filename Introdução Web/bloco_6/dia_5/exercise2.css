@@ -20,3 +20,23 @@ nav ul{
 nav ul li{
   margin-left: 15px;
 }
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+  body {
+    margin: 3px;
+    background-color: white;
+    color: black;
+    font-size: 1.4em;
+  }
+  h1, h2{
+    font-size: x-large;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+  }
+  #chapInfo{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
