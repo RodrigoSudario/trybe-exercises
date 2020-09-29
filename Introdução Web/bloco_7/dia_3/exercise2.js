@@ -12,11 +12,12 @@ function myRemove(arr, item) {
 
 // implemente seus testes aqui
 // Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
-console.log(myRemove([1, 2, 3, 4], 3));
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
 // Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
 // R: Retorna [ 1, 2, 4 ]
 // Verifique se o array passado por parâmetro não sofreu alterações
 // R: Sofreu [ 1, 2, 4 ]
 // Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
-console.log(myRemove([1, 2, 3, 4], 5));
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+// Passou no teste
 // R: Retorna [ 1, 2, 3, 4 ]

@@ -14,7 +14,7 @@ function myRemoveWithoutCopy(arr, item) {
 
 // implemente seus testes aqui
 // Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
-console.log(myRemoveWithoutCopy([1, 2, 3, 4], 3));
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4])
 // R: [ 1, 2, 4 ]
 // Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
 //  R: [ 1, 2, 4 ]
@@ -22,5 +22,5 @@ console.log(myRemoveWithoutCopy([1, 2, 3, 4], 3));
 // verifique se o array passado por parâmetro sofreu alterações
 // Sofreu, foi removido o nº 3
 // Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado
-console.log(myRemoveWithoutCopy([1, 2, 3, 4], 5));
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4])
 //R: [ 1, 2, 3, 4 ]

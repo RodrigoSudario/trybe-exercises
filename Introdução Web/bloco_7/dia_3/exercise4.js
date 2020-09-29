@@ -10,17 +10,17 @@ function myFizzBuzz(num) {
 
 // implemente seus testes aqui
 // Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
-console.log(myFizzBuzz(15));
+assert.strictEqual(myFizzBuzz(15), 'fizzbuzz');
 // R: fizzbuzz
 // Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
-console.log(myFizzBuzz(6));
+assert.strictEqual(myFizzBuzz(9), 'fizz');
 // R: fizz
 // Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
-console.log(myFizzBuzz(10));
+assert.strictEqual(myFizzBuzz(10), 'buzz');
 // R: buzz
 // Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
-console.log(myFizzBuzz(4));
-// R: 4
+assert.strictEqual(myFizzBuzz(11), 11);
+// R: 11
 // Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
-console.log(myFizzBuzz('4'));
+assert.strictEqual(myFizzBuzz('11'), false);
 // R: false
