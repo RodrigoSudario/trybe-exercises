@@ -78,3 +78,19 @@ part4('lesson3');
 const allLessons = {};
 Object.assign(allLessons, {lesson1, lesson2, lesson3});
 console.log(allLessons);
+
+//Usando o objeto criado no exercício 5, 
+//crie uma função que retorne o número total de estudantes em todas as aulas.
+const getNumberOfStudents = (obj) => {
+  let total = 0;
+  const allObjects = Object.keys(obj);
+  for (i in allObjects) {
+    total += obj[allObjects[i]].numeroEstudantes;
+  }
+  return total;
+};
+console.log(getNumberOfStudents(allLessons));
+
+//Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+const getValue = (obj, key) => Object.values(obj)[key];
+console.log(getValue(lesson1, 0));
