@@ -17,3 +17,6 @@ const obj3 = {
 
 // implemente seus testes aqui
 // Compare dois objetos (JSON) para verificar se são idênticos ou não
+assert.deepStrictEqual(obj1, obj2); // são idênticos;
+assert.notDeepStrictEqual(obj1, obj3); // não são idênticos;
+assert.notDeepStrictEqual(obj2, obj3); // não são idênticos;
